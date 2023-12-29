@@ -1,0 +1,227 @@
+/* 
+
+#comment_section {
+  list-style-type: none;
+  margin-bottom: 10px;
+  padding: 10px;
+  background-color: #efa1a1;
+  border-radius: 6px;
+  align-items: center;
+}
+
+#sort_asc, #sort_desc {
+  background-color: aquamarine;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+#comment_form {
+  margin-top: 20px;
+  border: 3px solid #ccc;
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  border-radius: 5px;
+}
+
+#comment_form label,
+#comment_form textarea,
+#comment_form input[type="text"] {
+  display: block;
+  margin-bottom: 10px;
+}
+
+#comment_button {
+  background-color: #3498db;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+#comment_button:disabled {
+  background-color: #ccc;
+  cursor: not-allowed;
+} */
+
+
+
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  display: flex;
+  justify-content: center;
+  padding: 8px;
+  margin: 0;
+  background-color: #FFC6BF;
+}
+
+.container {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: #efd6d3;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  border: 3px solid rgb(239, 161, 161);
+}
+
+h1, h2 {
+  color: #333;
+  text-align: center;
+}
+
+h1 {
+  font-family: Georgia;
+}
+
+h2 {
+  font-family: 'Franklin Gothic Medium';
+}
+
+section {
+  background-color: #edbbb6;
+  padding: 1px 13px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  border-radius: 8px;
+}
+
+ul, ol {
+  padding-left: 20px;
+}
+
+p {
+  line-height: 1.6;
+}
+
+a {
+  color: #425b8a;
+  text-decoration: none;
+}
+
+a:hover {
+  color: #ff0000;
+}
+
+.gallery {
+  padding: 0 20px 0 20px;
+  border: 4px solid rgb(239, 161, 161);
+}
+
+.gallery section.image-container {
+  padding: 0;
+}
+
+.image-container {
+  display: flex;
+  justify-content: center;
+}
+
+img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border: 3px solid #000000;
+  border-radius: 18px;
+}
+
+.card {
+  width: calc(30% - 3px);
+  margin-right: 10px;
+  position: relative;
+}
+
+.card:not(:first-child) {
+  margin-left: -50px;
+}
+
+.card:hover {
+  transform: translateY(-20px);
+}
+
+.card:hover ~ .card {
+  left: 50px;
+}
+
+.gallery section.card {
+  background: none;
+  border-bottom: none;
+}
+
+
+
+
+
+
+#comment_section {
+  border-top: 2px solid #ddd;
+  padding-top: 20px;
+}
+
+#sort_asc, #sort_desc {
+  background-color: #4caf50;
+  color: #fff;
+  border: none;
+  padding: 10px;
+  margin-bottom: 10px;
+  cursor: pointer;
+}
+
+#sort_asc:hover, #sort_desc:hover {
+  background-color: #45a049;
+}
+
+#comment_form {
+  margin-top: 20px;
+}
+
+label {
+  display: block;
+  margin-bottom: 5px;
+  color: #333;
+}
+
+input[type="text"], textarea {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 10px;
+  box-sizing: border-box;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+}
+
+button {
+  background-color: #4caf50;
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+button:disabled {
+  background-color: #ccc;
+  cursor: not-allowed;
+}
+
+button:hover {
+  background-color: #45a049;
+}
+
+#comments_list {
+  list-style: none;
+  padding: 0;
+}
+
+#comments_list li {
+  border-bottom: 1px solid #ddd;
+  padding: 10px 0;
+}
+
+#comments_list p {
+  margin: 0;
+}
+
+#comments_list li:last-child {
+  border-bottom: none;
+}
