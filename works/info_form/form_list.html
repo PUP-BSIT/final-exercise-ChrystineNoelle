@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Form List</title>
+        <link rel="stylesheet" href="form_list_style.css">
+    </head>
+    <body>
+        <div class="container">
+            <h2>INFORMATION FORM</h2>
+            <form id="info_form">
+                <label for="fullName">Full Name:</label>
+                <input 
+                    type="text" 
+                    id="full_name" 
+                    pattern="[A-Za-z0-9 ]+" 
+                    required>
+                <label for="id">ID:</label>
+                <input type="text" id="id" pattern="[0-9]+" required>
+                <button type="submit" id="add_btn">ADD</button>
+            </form>
+    
+            <div class="info-display" id="info_display">
+                <h2>INFORMATION</h2>
+                <div class="info-header">
+                    <div>Full Name</div>
+                    <div>ID</div>
+                    <div></div>
+                    <div></div>
+                </div>
+                <ul id="info_list"></ul>
+            </div>
+        </div>
+        <script src="form_list_script.js"></script>
+    </body>
+</html>

@@ -2,14 +2,28 @@
 <html>
 	<head>
 		<title>Asebuque Chrystine Noelle Page</title>
+		<link rel="stylesheet" href="style.css">
 	</head>
 	<body>
 		<div class="container">
-			<link rel="stylesheet" href="style.css">
-			<h1>Asebuque Chrystine Noelle</h1>
-			<section>
+			<header>
+				<h1>Asebuque Chrystine Noelle</h1>
+				<nav>
+					<ul>
+						<li><a href="#interests">Interests</a></li>
+						<li><a href="#work">Work</a></li>
+						<li><a href="#testimonials">Testimonials</a></li>
+						<li><a href="#gallery">Gallery</a></li>
+						<li><a href="#goals">Goals</a></li>
+						<li><a href="#journal">Journal</a></li>
+						<li><a href="#comments">Comments</a></li>
+					</ul>
+				</nav>
+			</header>
+			
+			<section id="interests">
 				<h2>My Interest and Hobbies</h2>
-				<ul>
+				<ul class="interests-hobbies">
 					<li><strong><em>Baking</em></strong></li>
 					<p>I love experimenting with different recipes.</p>
 					<li><strong><em>Reading</em></strong></li>
@@ -22,18 +36,30 @@
 					<p>This is my way of showing appreciation to arts.</p>
 				</ul>
 			</section>
-			<section>
-				<h2>My Work</h2>
-				<ol>
-					<li><a href="#">Baking</a></li>
-					<li><a href="#">Reading</a></li>
-					<li><a href="#">Games</a></li>
-					<li><a href="#">Cooking</a></li>
-					<li><a href="#">Arts</a></li>
-					<li><a href="countries.html">Countries of the World</a></li>
-				</ol>
+
+			<section id="work">
+				<h2>My Works</h2>
+				<div class="works">
+					<section class="work-list">
+						<ul>
+							<li><a href="works\timer\timer.html">Timer</a></li>
+							<li><a href="works\info_form\form_list.html">Info Display and Deletion</a></li>
+							<li><a href="works\odd_even\odd_even.html">Odd & Even Checker</a></li>
+							<li><a href="works\fibonacci\fibonacci.html">Fibonacci Calculator</a></li>
+						</ul>
+					</section>
+					<section class="work-list">
+						<ul>
+							<li><a href="works\clock\clock.html">Clock</a></li>
+							<li><a href="works\factorial\factorial.html">Factorial Calculator</a></li>
+							<li><a href="works\priority_queue\customer_form.html">Priority Queue Form</a></li>
+							<li><a href="works\search_countries\countries.html">SEARCH - Countries of the World</a></li>
+						</ul>
+					</section>
+				</div>
 			</section>
-			<section>
+
+			<section id="testimonials">
 				<h2>Testimonials</h2>
 				<p> I am highly impressed with the dedication that Chrystine
 					 Asebuque brings to every project. Her attention to detail
@@ -54,7 +80,8 @@
 					 hard work consistently shine through, making them an 
 					 invaluable part of our group. - Kyla</p>
 			</section>
-			<div class="gallery">
+
+			<div class="gallery" id="gallery">
 				<h2>Gallery</h2>
 				<section class="image-container">
 					<section class="card">
@@ -80,55 +107,79 @@
 					</section>
 				</section>
 			</div>
-			<section>
+
+			<section id="goals">
 				<h2>My Goals</h2>
-				<ul>
-					<li>Practice more on coding.</li>
-					<li>Learn more about Javascript.</li>
-					<li>Make my own website from scratch.</li>
-					<li>To participate in a fun run again.</li>
-					<li>Improve my time management skills.</li>
-					<li>Learn different cooking techniques and cuisines.</li>
-				</ul>
-			</section>
-			<div>
-				<div id="comment_section">
-					<h2>Comments</h2>
-					<button id="sort_asc">Sort by Date (Ascending)</button>
-					<button id="sort_desc">Sort by Date (Descending)</button>
-					<ul id="comments_list">
-						<li data-date="2023-10-28">
-							<p>Mark: I admire Chrystine's effort in practicing 
-								her coding skills.</p>
-						</li>
-						<li data-date="2023-10-28">
-							<p>Sam: I agree with what Mark said. Your 
-								aspirations are inspiring.</p>
-						</li>
-						<li data-date="2023-10-28">
-							<p>Via: Impressive goals! Keep going towards 
-								them.</p>
-						</li>
-						<li data-date="2023-10-28">
-							<p>Kyla: Yes! I can't wait to see you shine and 
-								conquer your dreams!</p>
-						</li>
-					</ul>
+				<div class="life-goals">
+					<section class="goals">
+						<ol>
+							<h3>As a Student</h3>
+							<li>Practice more on coding</li>
+							<li>Make my own website from scratch</li>
+							<li>To participate in a fun run again</li>
+							<li>Improve my time management skills</li>
+						</ol>
+					</section>
+
+					<section class="goals">
+						<ol>
+							<h3>5 Years From Now</h3>
+							<li>Establish a Fulfilling Career</li>
+							<li>Master Web and App Design</li>
+							<li>Travel and Bond with Family</li>
+							<li>Achieve Success in the Industry</li>
+						</ol>
+					</section>
 				</div>
-				<form id="comment_form">
-					<label for="name">Name:</label>
-					<input type="text" id="name" name="name" required>
-		
-					<label for="comment">Comment:</label>
-					<textarea id="comment" required></textarea>
-		
-					<button 
-						id="comment_button" 
-						type="submit" 
-						disabled>
-						Comment
-					</button>
-				</form>
+			</section>
+
+			<section id="journal">
+				<h2>My Journal</h2>
+				<p>Reflecting on my journey over the past few months, the challenges and pressures have been intense. There were moments of doubt, but as I look ahead, I find a renewed sense of purpose. The hardships are undoubtedly worth it, especially when I think about the future I am working towards.</p>
+				<p> I've updated my goals, and they now serve as a roadmap for the next five years. The prospect of supporting my family, mastering design, creating memories through travel, and achieving success in the industry fuels my determination. Each goal is a stepping stone, and I am committed to the journey, embracing the growth and learning it brings.</p>
+				<p>As I embark on this personal and professional adventure, I want to keep this journal as a testament to my sincerity and dedication. It's a reminder that even during challenging times, I stayed true to my aspirations and worked towards a future that aligns with my values and dreams.</p>
+			</section>
+
+			<div class="comment-section">
+				<div id="comments">
+					<div id="comments">
+						<h2>Comments</h2>
+						<button id="sort_asc">Sort by Date (Ascending)</button>
+						<button id="sort_desc">Sort by Date (Descending)</button>
+						<ul id="comments_list">
+							<li data-date="2023-10-28">
+								<p>Mark: I admire Chrystine's effort in practicing 
+									her coding skills.</p>
+							</li>
+							<li data-date="2023-10-28">
+								<p>Sam: I agree with what Mark said. Your 
+									aspirations are inspiring.</p>
+							</li>
+							<li data-date="2023-10-28">
+								<p>Via: Impressive goals! Keep going towards 
+									them.</p>
+							</li>
+							<li data-date="2023-10-28">
+								<p>Kyla: Yes! I can't wait to see you shine and 
+									conquer your dreams!</p>
+							</li>
+						</ul>
+					</div>
+					<form id="comment_form">
+						<label for="name">Name:</label>
+						<input type="text" id="name" name="name" required>
+			
+						<label for="comment">Comment:</label>
+						<textarea id="comment" required></textarea>
+			
+						<button 
+							id="comment_button" 
+							type="submit" 
+							disabled>
+							Comment
+						</button>
+					</form>
+				</div>
 			</div>
 		</div>
 		<script src="script.js"></script>

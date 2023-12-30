@@ -1,0 +1,61 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    font-family: Georgia, Arial, sans-serif;
+    margin: 0;
+}
+
+.container {
+    text-align: center;
+    border: 3px solid;
+    border-radius: 8px;
+    padding: 20px;
+    width: 400px;
+}
+
+.form-group {
+    margin-bottom: 10px;
+}
+
+.input-container {
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    overflow: hidden;
+}
+
+input {
+    width: 96%;
+    padding: 10px;
+    border: none;
+}
+
+button {
+    margin: 10px;
+    padding: 10px;
+    background-color: #4caf50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#queue_info {
+    margin-top: 20px;
+    border-top: 1px solid #ccc;
+    padding-top: 10px;
+    text-align: center;
+}
+
+.processing-info {
+    font-weight: bold;
+}
+
+.processing-name {
+    font-style: italic;
+}
+
+.processing-priority {
+    color: #4caf50;
+}
